@@ -1,8 +1,6 @@
-// Imports go first
-
 import { makePottery } from "./pottery-wheel.js";
 import { firePottery } from "./kiln.js";
-
+import { toSellOrNotToSell, usePottery } from './pottery-catalog.js';
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery()
 
@@ -18,12 +16,19 @@ const firedPottery3 = firePottery(pottery3, 2200);
 const firedPottery4 = firePottery(pottery4, 2000);
 const firedPottery5 = firePottery(pottery5, 2500); 
 
-// Log the created pottery pieces
-console.log(firedPottery1);
-console.log(firedPottery2);
-console.log(firedPottery3);
-console.log(firedPottery4);
-console.log(firedPottery5);
+// Determine if each piece should be sold
+toSellOrNotToSell(firedPottery1);
+toSellOrNotToSell(firedPottery2);
+toSellOrNotToSell(firedPottery3);
+toSellOrNotToSell(firedPottery4);
+toSellOrNotToSell(firedPottery5);
+
+// Get the list of pottery to be sold
+const potteryForSale = usePottery();
+
+// Log the list to the console
+console.log(potteryForSale);
+
 
 
 

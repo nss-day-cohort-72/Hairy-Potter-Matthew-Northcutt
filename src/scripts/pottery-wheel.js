@@ -1,5 +1,3 @@
-// scripts/PotteryWheel.js
-
 // Initialize the primary key with a value of 1
 let nextId = 1;
 

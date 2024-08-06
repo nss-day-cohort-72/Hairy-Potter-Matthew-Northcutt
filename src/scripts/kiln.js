@@ -21,7 +21,7 @@ export const firePottery = (pottery, temperature) => {
 If it's greater than 2200 degrees, it sets pottery.cracked to true (indicating the pottery cracked).
 Otherwise, it sets pottery.cracked to false (indicating the pottery did not crack).*/
 
-
+console.log(pottery)
 
     // Return the updated pottery object
     return pottery;
